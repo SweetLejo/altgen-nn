@@ -50,7 +50,6 @@ tmp/
 
 # Model files (if you want to exclude large model files from git)
 *.h5
-*.keras
 *.pb
 *.tflite
 *.pt

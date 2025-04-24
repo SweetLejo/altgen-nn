@@ -1,1 +1,3 @@
-__all__ = ['predict_aircraft']  # List what should be imported with from airplane_classification import *
+from .airplane_predictor import predict_aircraft
+
+__all__ = ['predict_aircraft']

@@ -2,9 +2,8 @@ import keras
 import numpy as np
 import json
 from tensorflow.keras.models import load_model # type: ignore
-# Fix the import paths - use relative imports since the file is in the same package
-from pre_processing import StochasticDepth  # Import the custom layer
-from pre_processing import preprocess_image  # Import the preprocessing function
+from .pre_processing import StochasticDepth  # Import the custom layer
+from .pre_processing import preprocess_image  # Import the preprocessing function
 
 
 keras.utils.get_custom_objects().update({"StochasticDepth": StochasticDepth})

@@ -50,6 +50,7 @@ python gradio_app.py
 ```
 
 The API will be available at http://localhost:8000.
+The Gradio will be available at http://localhost:7860.
 
 ## API Endpoints
 

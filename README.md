@@ -44,19 +44,9 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-
-The API will be available at http://localhost:8000.
-
-### Docker Deployment
-
-1. Build the Docker image:
+4.5. Run the application on gradio:
 ```bash
-docker build -t aircraft-classifier .
-```
-
-2. Run the container:
-```bash
-docker run -p 8000:8000 aircraft-classifier
+python gradio_app.py
 ```
 
 The API will be available at http://localhost:8000.

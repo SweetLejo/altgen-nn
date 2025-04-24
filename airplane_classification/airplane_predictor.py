@@ -6,11 +6,15 @@ from tensorflow.keras.models import load_model # type: ignore
 from .pre_processing import StochasticDepth  # Import the custom layer
 from .pre_processing import preprocess_image  # Import the preprocessing function
 
-
+'''
 keras.utils.get_custom_objects().update({"StochasticDepth": StochasticDepth})
 
 # Load the model
 model = load_model('airplane_classification/dark-microwave-30.keras')
+'''
+
+model = load_model('airplane_classification/efficient-microwave-72.keras')
+
 
 # label mapping
 with open('airplane_classification/label_mapping.json', 'r') as f:

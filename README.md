@@ -4,6 +4,9 @@
 
 This project provides a FastAPI-based web service for classifying aircraft images. The API uses a machine learning model to predict the type of aircraft in uploaded images and returns the prediction with a confidence score.
 
+The API will be available at http://localhost:8000.
+Swagger docs will be availible at http://localhost:8000/docs
+
 ## Features
 
 - RESTful API for aircraft image classification

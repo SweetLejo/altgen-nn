@@ -6,6 +6,7 @@ This project provides a FastAPI-based web service for classifying aircraft image
 
 The API will be available at http://localhost:8000.
 Swagger docs will be availible at http://localhost:8000/docs
+The Gradio will be available at http://localhost:7860.
 
 ## Features
 

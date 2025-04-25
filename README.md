@@ -5,19 +5,18 @@
 This project provides a FastAPI-based web service for classifying aircraft images. The API uses a machine learning model to predict the type of aircraft in uploaded images and returns the prediction with a confidence score.
 
 The API will be available at http://localhost:8000.
-Swagger docs will be availible at http://localhost:8000/docs
+Swagger docs will be availible at http://localhost:8000/docs.
+The Gradio will be available at http://localhost:7860.
 
 ## Features
 
 - RESTful API for aircraft image classification
 - Health check endpoint for monitoring
-- Containerized deployment with Docker
 - Simple and intuitive API interface
 
 ## Prerequisites
 
 - Python 3.11.7
-- Docker (for containerized deployment)
 
 ## Installation
 
@@ -44,22 +43,13 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-
-The API will be available at http://localhost:8000.
-
-### Docker Deployment
-
-1. Build the Docker image:
+4.5. Run the application on gradio:
 ```bash
-docker build -t aircraft-classifier .
-```
-
-2. Run the container:
-```bash
-docker run -p 8000:8000 aircraft-classifier
+python gradio_app.py
 ```
 
 The API will be available at http://localhost:8000.
+The Gradio will be available at http://localhost:7860.
 
 ## API Endpoints
 
@@ -110,7 +100,6 @@ NNAltGen/
 │   ├── airplane_predictor.py      # Prediction implementation
 │   ├── pre_processing.py          # Image preprocessing utilities
 │   └── dark-microwave-30.keras    # ML model (not in repo)
-├── Dockerfile                     # Docker configuration
 ├── requirements.txt               # Python dependencies
 └── README.md                      # Project documentation
 ```

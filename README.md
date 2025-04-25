@@ -4,16 +4,16 @@
 
 This project provides a FastAPI-based web service for classifying aircraft images. The API uses a machine learning model to predict the type of aircraft in uploaded images and returns the prediction with a confidence score.
 
-The API will be available at http://localhost:8000.
-Swagger docs will be availible at http://localhost:8000/docs.
-The Gradio will be available at http://localhost:7860.
+- **The API will be available at:** http://localhost:8000.
+- **Swagger docs will be availible at:** http://localhost:8000/docs.
+- **The Gradio will be available at:** http://localhost:7860.
 
 ## Features
 
 - RESTful API for aircraft image classification
 - Health check endpoint for monitoring
 - Simple and intuitive API interface
-
+- Lightweight and easy to deploy
 ## Prerequisites
 
 - Python 3.11.7
@@ -93,15 +93,22 @@ Accepts an image file and returns the predicted aircraft type.
 ## Project Structure
 
 ```
-NNAltGen/
-├── main.py                        # FastAPI application entry point
-├── airplane_classification/       # Classification module
-│   ├── __init__.py                # Package initialization
-│   ├── airplane_predictor.py      # Prediction implementation
-│   ├── pre_processing.py          # Image preprocessing utilities
-│   └── dark-microwave-30.keras    # ML model (not in repo)
-├── requirements.txt               # Python dependencies
-└── README.md                      # Project documentation
+altgen-nn/
+├── airplane_classification/
+│   ├── __init__.py                  # Package initialization
+│   ├── airplane_predictor.py        # Core prediction logic
+│   ├── create_labels.py             # Label generation script
+│   ├── dark-microwave-30.keras      # Trained Keras model
+│   ├── label_mapping.json           # Class index-to-name mapping
+│   ├── pre_processing.py            # Image preprocessing utilities
+├── notebooks/
+│   └── NyModell.ipynb               # Jupyter notebook for model development
+├── venv/                            # Virtual environment (excluded from version control)
+├── .gitignore                       # Git ignore rules
+├── gradio_app.py                    # Gradio interface entry point
+├── main.py                          # FastAPI entry point
+├── README.md                        # Project documentation
+└── requirements.txt                 # Python dependencies
 ```
 
 ## Error Handling

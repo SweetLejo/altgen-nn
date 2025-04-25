@@ -103,7 +103,7 @@ altgen-nn/
 │   ├── pre_processing.py            # Image preprocessing utilities
 ├── notebooks/
 │   └── NyModell.ipynb               # Jupyter notebook for model development
-├── venv/                            # Virtual environment (excluded from version control)
+├── venv/                            # Virtual environment
 ├── .gitignore                       # Git ignore rules
 ├── gradio_app.py                    # Gradio interface entry point
 ├── main.py                          # FastAPI entry point

@@ -17,7 +17,6 @@ Swagger docs will be availible at http://localhost:8000/docs
 ## Prerequisites
 
 - Python 3.11.7
-- Docker (for containerized deployment)
 
 ## Installation
 
@@ -101,7 +100,6 @@ NNAltGen/
 │   ├── airplane_predictor.py      # Prediction implementation
 │   ├── pre_processing.py          # Image preprocessing utilities
 │   └── dark-microwave-30.keras    # ML model (not in repo)
-├── Dockerfile                     # Docker configuration
 ├── requirements.txt               # Python dependencies
 └── README.md                      # Project documentation
 ```

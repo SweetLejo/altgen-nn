@@ -32,7 +32,7 @@ def preprocess_image(image_path :str):
     """
     # Load the image
 
-    img_size = (448,448)
+    img_size = (299,299)
 
     img = tf.io.read_file(image_path)
     img = tf.image.decode_jpeg(img, channels=3)  # Ensure 3 color channels (RGB)
@@ -40,13 +40,11 @@ def preprocess_image(image_path :str):
     # Resize the image to the expected size
     img = tf.image.resize(img, img_size)
 
-    # Normalize pixel values to [0, 1]
-    img = img / 255.0
-
     # Add a batch dimension (for a single image)
     img = tf.expand_dims(img, axis=0)
 
-    return img.numpy()
+    tf.print(img.shape)
+    return img
 
 
 

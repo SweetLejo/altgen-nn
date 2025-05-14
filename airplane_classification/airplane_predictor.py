@@ -6,10 +6,8 @@ from .pre_processing import StochasticDepth  # Import the custom layer
 from .pre_processing import preprocess_image  # Import the preprocessing function
 
 
-keras.utils.get_custom_objects().update({"StochasticDepth": StochasticDepth})
-
 # Load the model
-model = load_model('airplane_classification/dark-microwave-30.keras')
+model = load_model('airplane_classification/major-dragon-26.keras')
 
 
 
